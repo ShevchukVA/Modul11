@@ -1,0 +1,8 @@
+.header-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: transparent;    
+    border: 3px solid $link-color;    
+    margin-bottom: 230px;
+    @include btn;
+}

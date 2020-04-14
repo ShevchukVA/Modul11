@@ -1,0 +1,19 @@
+.nav-search {
+    @extend %list;
+    &__item:not(:last-child) {
+        margin-right: 40px;
+    
+    } 
+    &__icon {
+        @extend %link;
+        width: 18px;
+        height: 18px;
+        fill: $link-color;
+        transition: fill 200ms linear;    
+            &:hover,
+            &focus {
+            fill: $peach-color;
+        }    
+    }
+
+}

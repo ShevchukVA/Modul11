@@ -1,0 +1,5 @@
+.team-list {
+    @extend %list;
+    justify-content: space-between;
+    margin-bottom: 82px;
+}

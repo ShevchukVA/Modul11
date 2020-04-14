@@ -1,0 +1,34 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+@import 'helpers/variables.scss';
+@import 'helpers/mixins.scss';
+@import 'helpers/placeholder.scss';
+@import 'normalize.scss';
+@import 'base.scss';
+
+// Components
+@import 'components/container.scss';
+@import 'components/text.scss';
+// Header
+@import 'header/page-header.scss';
+@import 'header/page-nav.scss';
+@import 'header/nav-site.scss';
+@import 'header/nav-search.scss';
+@import 'header/header-title.scss';
+@import 'header/header-button.scss';
+// Service
+@import 'service/service-title.scss';
+@import 'service/service-list.scss';
+@import 'service/service-card.scss';
+@import 'service/service-icon.scss';
+@import 'service/card-title.scss';
+// Team
+@import 'team/team-title.scss';
+@import 'team/team-list.scss';
+@import 'team/card-haed.scss';
+@import 'team/list-socials.scss';
+@import 'team/card-body.scss';
+// Footer
+@import 'footer/page-footer.scss';
+@import 'footer/form.scss'

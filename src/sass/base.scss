@@ -1,0 +1,25 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body { font-family: $main-font;
+  font-size: 15px;
+  line-height: 1.2;
+  color: $main-color;
+}
+.clearfix::before {
+  content: '';
+  display: table;
+  clear: both;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

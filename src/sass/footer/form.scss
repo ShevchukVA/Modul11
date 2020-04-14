@@ -1,0 +1,15 @@
+.footer-form__mail {
+    padding: 12px 30px;
+    color: $form-text-color;
+    font-weight: 300;
+    font-style: italic;
+    border: 0;
+    outline: 1px solid rgb(231, 231, 231);
+}
+.footer-form__button {
+    @include btn;
+    background-color: $sea-color;
+    padding: 12px 33px;
+    border: 0;
+    outline: 0;
+}
