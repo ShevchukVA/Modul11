@@ -1,0 +1,38 @@
+.footer {
+    font-size: 14px;
+    line-height: 17px;
+    color: $main-color;
+    padding-top: 12px;
+    padding-bottom: 12px;    
+    position: relative;
+
+    &::before {
+        @include psevdo;
+        width: 100%;
+        height: 1px;
+        background-color: $footer-superline;
+        position: absolute;
+        top: 0;
+    }
+    &__mail {
+        padding: 12px 30px;
+        color: $form-text-color;
+        font-weight: 300;
+        font-style: italic;
+        border: 0;
+        outline: 1px solid rgb(231, 231, 231);
+    }
+    &__button {
+        @include btn;
+        background-color: $sea-color;
+        padding: 12px 33px;
+        border: 0;
+        outline: 0;
+    }
+}
+.footer__box {
+    @include center-flex();    
+}
+.footer__text--last-word{
+    color: $last-word;
+}

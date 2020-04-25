@@ -1,0 +1,85 @@
+.header {
+    @include bg-img($path:'../images/eagle.png')
+    color: $link-color;
+    padding-top: 40px;
+    padding-bottom: 230px;
+    
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+             background-image: url(../img/eagle@2x.png);
+    }
+    &__nav {
+        @extend %list;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 176px;
+    }
+    &__about {
+        font-family: $about-font;
+        font-size: 72px;
+        line-height: 116px;
+    }
+    &__title {
+        width: 834px;
+        font-size: 150px;
+        line-height: 240px;
+        text-transform: uppercase;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+    &__button {
+        display: inline-block;
+        padding: 15px 30px;
+        background-color: transparent;    
+        border: 3px solid $link-color;    
+        @include btn;
+    }
+}
+.nav-site {
+    @extend %list;
+    font-size: 14px;
+
+    &__item:not(:last-child) {
+        margin-right: 40px;
+    
+    }
+    &__icon {
+        display: block;
+        width: 18px;
+        height: 18px;
+        fill: #ffffff;
+        transition: fill 200ms linear;
+            &:hover,
+            &:focus {
+            fill: $peach-color;
+        }
+    } 
+    &__link {
+        @extend %link;
+        color: $link-color;    
+        text-transform: uppercase;
+        position: relative;
+        transition: color 200ms linear;
+            &:hover,
+            &:focus {
+            color: $peach-color;
+        }
+            &:hover::after,
+            &:focus::after {
+                opacity: 1;
+            }
+            
+            &::after {
+                @include psevdo;
+                margin-top: 10px;
+                position: absolute;
+                left: 50%;
+                top: 100%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                height: 3px;
+                background-color: $peach-color;
+                opacity: 0;
+                transition: 200ms linear;
+            }
+    }
+}
